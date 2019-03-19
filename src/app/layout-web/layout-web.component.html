@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+    <div class="header" [style.height.px]="heightSize">
+      <input type="number" [value]="heightSize">
+      <button type="button" (click)="onclickHeader($event.target.value)">+</button>
+      <button type="button" (click)="onclickTru($event.target.value)">-</button>
+    </div>
+
+    <div class="content">
+      <div class="left" [style.width.px]="widthSizeLeft">
+        <input type="number" [value]="widthSizeLeft">
+        <button type="button" (click)="onclickLeft($event.target.value)">+</button>
+        <button type="button" (click)="onclickLleftTru($event.target.value)">-</button>
+      </div>
+      <div class="right" [style.width.px]="widthSizeRight">
+        <input type="number" [value]="widthSizeRight">
+        <button type="button" (click)="onclickRight($event.target.value)">+</button>
+        <button type="button" (click)="onclickRightTru($event.target.value)">-</button>
+      </div>
+    </div>
+</body>
+</html>
